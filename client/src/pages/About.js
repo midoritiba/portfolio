@@ -4,6 +4,7 @@ import Accordion from "../components/Accordion";
 import { accordionData } from "../data/accordionData";
 import { technologiesData } from "../data/technologiesData";
 import { educationData } from "../data/educationData";
+import {FaFileDownload} from 'react-icons/fa';
 
 const About = () => {
   const {darkMode} = useContext(DarkModeContext)
@@ -15,21 +16,27 @@ const About = () => {
   return (
     <section className={darkMode ? `about bg-dark` : `about bg-light`} id='about'>
 
-      <h1 className='mt-5 mb-2'>About me</h1>
+      <h1 className='mt-5 mb-4'>About me</h1>
 
-      <div className="introduction">
-        <h5>
+      <div className="introduction mb-5">
+        <h5 className="intro">
           I'm a Full Stack Developer who has recently started my journey as a web developer.
           I'm a self-motivated learner with organization, time management & communication skills.
-          I'm able to work independently & collaboratively in a team with attention to details.
+          I'm able to work independently & collaboratively in a team with attention to details.<br/>
         </h5>
+        <div className="cv">
+          <a className='link'  rel='noopener noreferrer' target='_blank' href='https://drive.google.com/file/d/1k3TqpKPSg4Ven1Vr7gLdkyzcWFyKmZ7T/view?usp=sharing'>
+            <FaFileDownload className="mt-3" size={42} color={darkMode ? 'white' : 'black'}/><p>Full CV</p>
+          </a>
+        </div>
+        
       </div>
 
-      <div className="details my-4">
+      <div className="details my-5">
 
         <div className="details-education">
           <h2>Certificates</h2>
-          <div className="education">
+          <div className="education mt-4">
           <ul>
             {educationData.map(ed => (
             <li>
@@ -48,7 +55,7 @@ const About = () => {
           <h2>Technologies</h2>
           <div className="technologies text-center">
             {technologiesData.map(technology => (
-              <div className="technologie-wrapper mt-3 me-3 mb-3 p-3 mx-3">
+              <div className="technologie-wrapper mt-3 me-3 mb-3 p-3 mx-3 fs-5">
                 {technology}
               </div>
             ))}
@@ -58,22 +65,26 @@ const About = () => {
 
 
 
-      <div className="information d-flex" style={{width: '100%', height:'50vh'}}>
+      <div className="extra-info d-flex mt-5">
 
-        <div className="left w-100">
-          <img src={process.env.PUBLIC_URL + '/images/aboutme.svg'} style={{height: '80%', objectFit: 'cover', objectPosition: 'center', borderRadius: '20px'}} alt="" />
+        <div className="extra-info-img left">
+            <p className='human fw-bold fs-4'>
+             grab a coffee and learn more about me ☕
+            </p> 
+            <div style={{backgroundColor: 'white', display: 'inline-block', borderRadius: '10px'}}className="p-3 mb-2">
+            <input className='mx-2'
+              type="checkbox"
+              checked={checked}
+              onChange={handleChange}  />
+              <label for="confirm" className="ms-1 fw-bold fs-4" >
+                not a robot<span class="blink px-2">?</span>
+              </label>
+              <img className='mb-1 ms-2' src={process.env.PUBLIC_URL + '/images/recaptcha-official.svg'} style={{width: '45px'}} alt="" />
+           </div>
+            <img src={process.env.PUBLIC_URL + '/images/aboutme.svg'} style={{height: '400px', objectFit: 'cover', objectPosition: 'center', borderRadius: '20px'}} alt="" />
         </div>
 
-        <div className="mt-3 right w-100 text-center">
-
-          <p className='human fw-bold fs-4 mb-5 '>grab a coffee and learn more about me ☕<br/>
-            <input className='mx-2'
-            type="checkbox"
-            checked={checked}
-            onChange={handleChange}  />
-            <label for="confirm" >am I human<span class="blink px-2">?</span></label>
-            <img className='ms-2' src={process.env.PUBLIC_URL + '/images/recaptcha-official.svg'} style={{width: '45px'}} alt="" />
-          </p>
+        <div className="extra-info-wrapper right w-100 text-center">
 
           {checked && (
             <div className='more-about text-start'  data-simplebar>

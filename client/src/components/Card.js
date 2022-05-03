@@ -16,7 +16,7 @@ const Card = ({id, title, technologies, description, features, demo, code, image
         {description}
         <ul className='mt-2'>
             {features.map(feature => (
-                <li>{feature}</li>
+                <li id={`feature ${feature}`} style={{color: 'black'}}>{feature}</li>
             ))}
         </ul>
       </div>
