@@ -1,9 +1,13 @@
-import React from 'react'
+import NavigationMobile from "./NavigationMobile";
+import NavigationDesktop from "./NavigationDesktop";
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <>
+      <NavigationDesktop />
+      <NavigationMobile />
+    </>
   )
 }
 
-export default Navbar
+export default Navbar;
