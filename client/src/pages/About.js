@@ -1,6 +1,7 @@
 import { useContext,useState } from "react";
 import { DarkModeContext } from "../context/DarkModeContext";
-import { Accordion } from 'react-bootstrap'
+import Accordion from "../components/Accordion";
+import { accordionData } from "../data/accordionData";
 
 const About = () => {
   const {darkMode} = useContext(DarkModeContext)
@@ -70,24 +71,9 @@ const About = () => {
 
           {checked && (
             <div className='more-about text-start'  data-simplebar>
-              <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>5 years working in social projects</Accordion.Header>
-                  <Accordion.Body>
-                  At the age of 21 I got involved in my first social educational project which was a period of much learning and understanding of what motivates me professionally and personally. 
-                  <br/>I acted as a Mathematics and Physics tutor, Physics teacher, HR coordinator and Director during my stay in this first project. <br/>As an introvert myself, much courage of me was required to face a loooot of public speaking (one of my greatest fears). BUT my greatest challenged was the quest on how to engage 50 students in the same room aged between 16 and 60 years old to learn 'Principle of Inertia' on a Friday at 10 pm. 
-                  <br/><br/>
-                  Leading a team of 20 teachers and 5 coordinators made me gain perspective and ability to listen, guide and delegate. 
-                  <br/>My team managed to initiate an important partnerships of book donations and concessions of spaces for classes, study rooms and equipment. As well as establish an internal selection process for teachers, tutors and students, thus needing to interview numerous volunteers and students.
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>Hobbies</Accordion.Header>
-                  <Accordion.Body>
-                    I can spend hours sitting in front of a computer or reading a good book, but being active is a non negotiable deal to my body to main its sanity and well-being loaded. I have a history with team sports, but nowadays I weekly attend HipHop and Zumba classes.
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
+            {accordionData.map(({ title, content }) => (
+            <Accordion title={title} content={content} />
+            ))}
             {/* <p>I've always been passionate about science and I was very engaged in subjects such as Physics and Mathematics during my years in school. My curiosity and interest in education, arts and social equity, however, have always been topics of high relevance in my life.
             </p>
             <br/> */}
