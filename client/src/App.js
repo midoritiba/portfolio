@@ -3,6 +3,7 @@ import { DarkModeProvider } from './context/DarkModeContext';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import Projects from './pages/Projects';
+import About from './pages/About';
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import {HashLink as Link} from 'react-router-hash-link'
 import {useState, useEffect} from 'react';
@@ -26,6 +27,7 @@ function App() {
       <Navbar />
       <Homepage/>
       <Projects />
+      <About />
       {showButton && (
             <Link to="#home" >
               <FaArrowAltCircleUp
