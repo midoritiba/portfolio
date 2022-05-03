@@ -1,6 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { DarkModeProvider } from './context/DarkModeContext';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
 import Projects from './pages/Projects';
 import About from './pages/About';
@@ -30,6 +31,7 @@ function App() {
       <Projects />
       <About />
       <Contact />
+      <Footer/>
       {showButton && (
             <Link to="#home" >
               <FaArrowAltCircleUp
