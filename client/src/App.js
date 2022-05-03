@@ -2,6 +2,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { DarkModeProvider } from './context/DarkModeContext';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
+import Projects from './pages/Projects';
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import {HashLink as Link} from 'react-router-hash-link'
 import {useState, useEffect} from 'react';
@@ -24,6 +25,7 @@ function App() {
     <Router>
       <Navbar />
       <Homepage/>
+      <Projects />
       {showButton && (
             <Link to="#home" >
               <FaArrowAltCircleUp
