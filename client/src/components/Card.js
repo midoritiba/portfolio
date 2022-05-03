@@ -1,6 +1,6 @@
 const Card = ({id, title, technologies, description, features, demo, code, image}) => {
   return (
-    <div className="card" id={id}>
+    <div className="card mt-5" id={id}>
 
     <div className="details">
       <h2>{title}</h2>
