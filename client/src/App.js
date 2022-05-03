@@ -1,4 +1,5 @@
 import { BrowserRouter as Router } from 'react-router-dom';
+import { DarkModeProvider } from './context/DarkModeContext';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import { FaArrowAltCircleUp } from "react-icons/fa";
@@ -19,6 +20,7 @@ function App() {
   }, []);
 
   return (
+    <DarkModeProvider>
     <Router>
       <Navbar />
       <Homepage/>
@@ -36,6 +38,7 @@ function App() {
             </Link>)
           }
     </Router>
+    </DarkModeProvider>
   );
 }
 
