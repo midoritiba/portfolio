@@ -3,6 +3,7 @@ import { DarkModeContext } from "../context/DarkModeContext";
 import Accordion from "../components/Accordion";
 import { accordionData } from "../data/accordionData";
 import { technologiesData } from "../data/technologiesData";
+import { educationData } from "../data/educationData";
 
 const About = () => {
   const {darkMode} = useContext(DarkModeContext)
@@ -13,21 +14,49 @@ const About = () => {
   };
   return (
     <section className={darkMode ? `about bg-dark` : `about bg-light`} id='about'>
-      <h1 className='mt-5 mb-2'>About me</h1>
-      <h5>I'm a Full Stack Developer who has recently started my journey as a web developer.
-          I'm a self-motivated learner with organization, time management & communication skills.
-          I'm able to work independently & collaboratively in a team with attention to details.</h5>
 
-      <div className="details mt-4">
-        <h2>Technologies</h2>
-        <div className="technologies">
-          {technologiesData.map(technology => (
-            <div className="technologie-wrapper mt-3 me-3">
-              {technology}
-            </div>
-          ))}
+      <h1 className='mt-5 mb-2'>About me</h1>
+
+      <div className="introduction">
+        <h5>
+          I'm a Full Stack Developer who has recently started my journey as a web developer.
+          I'm a self-motivated learner with organization, time management & communication skills.
+          I'm able to work independently & collaboratively in a team with attention to details.
+        </h5>
+      </div>
+
+      <div className="details my-4">
+
+        <div className="details-education">
+          <h2>Certificates</h2>
+          <div className="education">
+          <ul>
+            {educationData.map(ed => (
+            <li>
+              <p className="fw-bold">{ed.name}<br/>
+              <span className="fw-light">{ed.date}</span></p>
+          </li>
+            ))}
+
+          </ul>
+
+          
+        </div>
+          
+        </div>
+        <div className="details-technologies me-2">
+          <h2>Technologies</h2>
+          <div className="technologies text-center">
+            {technologiesData.map(technology => (
+              <div className="technologie-wrapper mt-3 me-3 mb-3 p-3 mx-3">
+                {technology}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+
+
 
       <div className="information d-flex" style={{width: '100%', height:'50vh'}}>
 

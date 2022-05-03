@@ -121,22 +121,31 @@ body {
         border-radius: 5px;
       }
       .details{
-        width: 50%;
-        .technologies{
-          .technologie-wrapper{
-            display: inline-block;
-            font-size: 16px;
-            padding: 8px;
-            border-radius: 10px;
-            font-weight: bold;
-            background-color: #37B3A8;
-            color: blanchedalmond;
-            box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+        display: flex;
+
+        width: 100%;
+        .details-technologies{
+          width: 50%;
+          .technologies{
+            .technologie-wrapper{
+              display: inline-block;
+              font-size: 16px;
+              padding: 8px;
+              border-radius: 10px;
+              font-weight: bold;
+              background-color: #37B3A8;
+              color: blanchedalmond;
+              box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+              -webkit-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+              -moz-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+            }
           }
         }
+        .details-education{
+          width: 50%;
+        }
       }
+      
       @keyframes blink {
         50% {
           opacity: 0.0;
