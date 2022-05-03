@@ -10,7 +10,7 @@ const Contact = () => {
     <section className={darkMode ? `contact bg-dark` : `contact bg-light`} id='contact'>
       <div className='d-flex'>
         <h1 className='mb-3'>Contact me</h1>
-        <img className='mt-5' src={process.env.PUBLIC_URL + '/images/contact2.png'} style={{width: '150px', borderRadius: '50%'}} alt="" />
+        <img className='mt-5' src={process.env.PUBLIC_URL + '/images/contact.png'} style={{width: '150px', borderRadius: '50%'}} alt="" />
       </div>
       
     </section>
