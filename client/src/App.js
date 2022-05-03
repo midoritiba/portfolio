@@ -1,9 +1,11 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <Router>
+      <Homepage/>
+    </Router>
   );
 }
 
