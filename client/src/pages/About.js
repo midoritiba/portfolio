@@ -71,7 +71,7 @@ const About = () => {
             <p className='human fw-bold fs-4'>
              grab a coffee and learn more about me ☕
             </p> 
-            <div style={{backgroundColor: 'white', display: 'inline-block', borderRadius: '10px'}}className="p-3 mb-2">
+            <div style={{backgroundColor: 'white', display: 'inline-block', borderRadius: '10px', border: '2px solid black'}} className="p-3 mb-2">
             <input className='mx-2'
               type="checkbox"
               checked={checked}

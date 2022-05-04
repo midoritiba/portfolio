@@ -141,7 +141,6 @@ body {
       }
       .details{
         display: flex;
-
         width: 100%;
         .details-technologies{
           width: 50%;
@@ -196,5 +195,23 @@ body {
           }
         }
       }
+    }
+    #contact{
+      display: flex;
+      justify-content: center;
+      .box {
+        align-self: flex-end;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        background-color: #F44336;
+        height: 200px;
+        margin: 0 auto 0 auto;
+        transform-origin: bottom;
+        width: 200px;
+    }
+    .bounce {
+        animation-name: bounce;
+        animation-timing-function: ease;
+    }
     }
   }
