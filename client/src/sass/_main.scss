@@ -39,7 +39,7 @@ body {
 
     }
     .contact{
-      height: 80vh;
+      min-height: 80vh;
     }
     .bg-dark{
       background-image: url("../../public/images/background-darkmode.svg");  
@@ -67,6 +67,18 @@ body {
       display: flex;
       // flex-direction: column;
       justify-content: center;
+      @media screen and (max-width: $medium) {
+        h1{
+          font-size: 40px;
+        }
+        h4{
+          font-size: 20px;
+        }
+        p{
+          font-size: 12px;
+        }
+        height: 90%;
+      }
 
     }
 
@@ -79,6 +91,9 @@ body {
       justify-content: center;
       align-items: flex-start;
       padding: 2rem 15%;
+      @media screen and (max-width: $medium) {
+        padding: 2rem 6%;
+      }
 
       div.card{
         padding: 2rem;
@@ -119,6 +134,7 @@ body {
           }
           @media screen and (max-width: $large){
             width: 100%;
+            margin-top: 1rem;
           }
         }
       }
@@ -132,7 +148,9 @@ body {
       justify-content: center;
       align-items: flex-start;
       padding: 2rem 15%;
-
+      @media screen and (max-width: $medium) {
+        padding: 2rem 6%;
+      }
 
       .introduction{
         display: flex;
@@ -278,6 +296,10 @@ body {
       justify-content: center;
       align-items: flex-start;
       padding: 2rem 15%;
+      @media screen and (max-width: $medium) {
+        padding: 2rem 6%;
+      }
+
       .contact-wrapper{
         display: flex;
         width: 100%;
@@ -285,6 +307,9 @@ body {
         align-items: center;
         @media screen and (max-width: $large) {
           flex-direction: column-reverse;
+        }
+        .form-wrapper{
+          width: 100%;
         }
       }
 

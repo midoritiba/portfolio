@@ -33,7 +33,6 @@ const ContactForm = () => {
   }
 
   return (
-      <div className='me-5'>
         <div className="section-content">
           <div className="form-wrapper">
             <form onSubmit={handleSubmit}  ref={form}>
@@ -48,7 +47,6 @@ const ContactForm = () => {
             </form>
           </div>
         </div>
-      </div>
 
   );
 };

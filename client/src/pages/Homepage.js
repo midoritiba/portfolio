@@ -15,7 +15,7 @@ const Homepage = () => {
         {/* description */}
         <div className="hero-section" >
           <div className="left-wrapper">
-            <h1 className="my-3 text-center" style={{fontSize: '4rem'}}>
+            <h1 className="my-3 text-center" >
               Hi, I am Michelle | Full Stack Developer
             </h1>
             <div className='text-center mb-5'>
@@ -30,14 +30,14 @@ const Homepage = () => {
               </a>
             </div>
           
-          <h4 className="mt-4 text-center">
+          <h4 className="mt-0 mt-md-4 text-center">
             I'm a lifelong learner, interested in beautiful designs and clean coding
           </h4>
           <p className="text-center">
             When I am not coding I'm most probably dancing Zumba 💃 or shower singing 🎤🚿
           </p>
 
-          <Link to='#projects' className="mt-5 wrap">
+          <Link to='#projects' className="mt-2 mt-md-5 wrap">
             <button className="button">check out projects</button>
           </Link>
           </div>

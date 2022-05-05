@@ -29,7 +29,15 @@ a{
       outline: none;
       position: relative;
       padding: 20px;
-      
+      @media screen and (max-width: $medium) {
+        min-width: 200px;
+        min-height: 40px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        font-weight: 500;
+      }
       }
     
     button::before {
