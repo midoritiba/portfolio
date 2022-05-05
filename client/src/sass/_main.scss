@@ -1,5 +1,5 @@
-$small: 300px;
-$medium: 1500px;
+$medium: 820px;
+$large: 1500px;
 
 * {
     box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
 
     .img{
       filter: drop-shadow(35px 30px 3px #ccccdf9f);
-      @media screen and (max-width: $medium){
+      @media screen and (max-width: $large){
         display: none;
       }
     }

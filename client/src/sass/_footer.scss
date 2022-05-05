@@ -31,6 +31,15 @@ footer {
         justify-content: space-between;
         align-content: center;
         align-items: center;
+        @media screen and (max-width: $medium){
+            flex-direction: column-reverse;
+            .footer-contact{
+                margin-bottom: 1rem;
+            }
+            .copyright{
+                text-align: center;
+            }
+          }
 
         .footer-contact a{
             :hover{
