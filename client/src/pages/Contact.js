@@ -15,7 +15,7 @@ const Contact = () => {
           <ContactForm />    
 
           
-        <div className='d-flex flex-column text-center '>
+        <div className='d-flex flex-column text-center form-img'>
           <img  src={process.env.PUBLIC_URL + '/images/contact.png'} style={{width: '300px', borderRadius: '50%'}} alt="" /> 
         </div>   
       </div>

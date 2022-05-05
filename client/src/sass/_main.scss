@@ -303,13 +303,16 @@ body {
       .contact-wrapper{
         display: flex;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         @media screen and (max-width: $large) {
           flex-direction: column-reverse;
         }
         .form-wrapper{
           width: 100%;
+        }
+        .form-img{
+          margin-left: 2rem;
         }
       }
 
