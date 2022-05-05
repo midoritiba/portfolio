@@ -53,6 +53,10 @@ a{
       transform: translate(-50%, -50%);
       opacity: 0;
       transition: all .3s ease-in-out 0s;
+      @media screen and (max-width: $medium) {
+        min-width: calc(270px + 12px);
+        min-height: calc(55px + 12px);
+      }
     }
     
     .button:hover, .button:focus {
