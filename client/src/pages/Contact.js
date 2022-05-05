@@ -12,12 +12,10 @@ const Contact = () => {
       <h1 className='mb-3'>Get in touch</h1>
       <h5 className="mt-1 mb-5">Don't hesitate contacting me 🤗</h5>
       <div className="contact-wrapper">
-          <ContactForm />    
-
-          
-        <div className='d-flex flex-column text-center form-img'>
-          <img  src={process.env.PUBLIC_URL + '/images/contact.png'} style={{width: '300px', borderRadius: '50%'}} alt="" /> 
-        </div>   
+          <ContactForm />            
+          <div className='d-flex flex-column text-center form-img'>
+            <img  src={process.env.PUBLIC_URL + '/images/contact.png'} style={{width: '300px', borderRadius: '50%'}} alt="" /> 
+          </div>   
       </div>
      
 
