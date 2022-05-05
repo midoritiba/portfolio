@@ -45,7 +45,7 @@ const ContactForm = () => {
               </div>
               <button className='fill btn mt-5 fw-bold'
                     type='submit'
-                    style={{backgroundColor: 'white', color: 'blueviolet'}}>Send a message</button>
+                    style={{backgroundColor: 'white', color: 'blueviolet'}}>Send</button>
             </form>
           </div>
         </div>

@@ -13,13 +13,12 @@ const Homepage = () => {
     <section className={darkMode ? `homepage bg-dark` : `homepage bg-light`} id='home'>
 
         {/* description */}
-        <div className="hero-section" style={{width:'60%'}}>
-
-          <h1 className="my-3 text-center" style={{fontSize: '4rem'}}>
-            Hi, I am Michelle | Full Stack Developer
-          </h1>
-
-           <div className='text-center mb-5'>
+        <div className="hero-section" >
+          <div className="left-wrapper">
+            <h1 className="my-3 text-center" style={{fontSize: '4rem'}}>
+              Hi, I am Michelle | Full Stack Developer
+            </h1>
+            <div className='text-center mb-5'>
               <a rel='noopener noreferrer' target='_blank' className='link text-decoration-none' href='https://github.com/midoritiba'>
                 <FaGithub size={iconSize} color={iconColor} className={iconClasses}/>
               </a>
@@ -38,17 +37,15 @@ const Homepage = () => {
             When I am not coding I'm most probably dancing Zumba 💃 or shower singing 🎤🚿
           </p>
 
-          <Link to='#projects' className="align-self-center wrap">
-            <button className="button mt-5">check out projects</button>
+          <Link to='#projects' className="mt-5 wrap">
+            <button className="button">check out projects</button>
           </Link>
+          </div>
+          <div className='img ms-5 align-self-center'>
+             <img src={process.env.PUBLIC_URL + '/images/profile.png'} style={{width: '100%', opacity: '0.5', clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)'}} alt="" />
+          </div>
         </div>
 
-        {/* image */}
-        <div className='img'>
-          <img src={process.env.PUBLIC_URL + '/images/profile.png'} style={{width: '500px', opacity: '0.5', clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)'}} alt="" />
-        </div>
-
-        
     </section>
       
   )

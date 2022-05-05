@@ -1,3 +1,6 @@
+$small: 300px;
+$medium: 1500px;
+
 * {
     box-sizing: border-box;
     &::before, &::after {
@@ -15,6 +18,9 @@ body {
 
     .img{
       filter: drop-shadow(35px 30px 3px #ccccdf9f);
+      @media screen and (max-width: $medium){
+        display: none;
+      }
     }
 
     section{
@@ -29,6 +35,7 @@ body {
     }
     .homepage, .projects, .about{
       min-height: 100vh;
+
     }
     .contact{
       height: 80vh;
@@ -40,6 +47,7 @@ body {
       }
       h1{
         text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+        
       }
     }
     .bg-light{
@@ -52,11 +60,13 @@ body {
     }
 
     .hero-section{
-      max-width: 85%;
+      width:80%;
+      // max-width: 85%;
       height: 80%;
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       justify-content: center;
+
     }
 
     #projects{
@@ -201,3 +211,4 @@ body {
       justify-content: center;
     }
   }
+
