@@ -37,30 +37,29 @@ const About = () => {
         <div className="details-education">
           <h2>Certificates</h2>
           <div className="education mt-4">
-          <ul>
-            {educationData.map(ed => (
-            <li>
-              <p className="fw-bold">{ed.name}<br/>
-              <span className="fw-light">{ed.date}</span></p>
-          </li>
-            ))}
+            <ul>
+              {educationData.map(ed => (
+              <li>
+                <p className="fw-bold">{ed.name}<br/>
+                <span className="fw-light">{ed.date}</span></p>
+            </li>
+              ))}
 
-          </ul>
+            </ul>
+          </div>
+        </div>
 
-          
-        </div>
-          
-        </div>
         <div className="details-technologies me-2">
           <h2>Technologies</h2>
           <div className="technologies text-center">
             {technologiesData.map(technology => (
-              <div className="technologie-wrapper mt-3 me-3 mb-3 p-3 mx-3 fs-5">
+              <div className="technologie-wrapper">
                 {technology}
               </div>
             ))}
           </div>
         </div>
+
       </div>
 
 
@@ -68,23 +67,28 @@ const About = () => {
       <div className="extra-info d-flex mt-5">
 
         <div className="extra-info-img left">
+          <div>
             <p className='human fw-bold fs-4'>
              grab a coffee and learn more about me ☕
             </p> 
+
             <div style={{backgroundColor: 'white', display: 'inline-block', borderRadius: '10px', border: '2px solid black'}} className="p-3 mb-2">
-            <input className='mx-2'
-              type="checkbox"
-              checked={checked}
-              onChange={handleChange}  />
-              <label for="confirm" className="ms-1 fw-bold fs-4" >
-                not a robot<span class="blink px-2">?</span>
-              </label>
-              <img className='mb-1 ms-2' src={process.env.PUBLIC_URL + '/images/recaptcha-official.svg'} style={{width: '45px'}} alt="" />
-           </div>
-            <img src={process.env.PUBLIC_URL + '/images/aboutme.svg'} style={{height: '400px', objectFit: 'cover', objectPosition: 'center', borderRadius: '20px'}} alt="" />
+              <input className='mx-2'
+                type="checkbox"
+                checked={checked}
+                onChange={handleChange}  />
+                <label for="confirm" className="ms-1 fw-bold fs-4" >
+                  not a robot<span class="blink px-2">?</span>
+                </label>
+
+                <img className='mb-1 ms-2' src={process.env.PUBLIC_URL + '/images/recaptcha-official.svg'} style={{width: '45px'}} alt="" />
+            </div>
+            </div>
+
+            <img className='about-me-img' src={process.env.PUBLIC_URL + '/images/aboutme.svg'} alt="" />
         </div>
 
-        <div className="extra-info-wrapper right w-100 text-center">
+        <div className="extra-info-wrapper w-100">
 
           {checked && (
             <div className='more-about text-start'  data-simplebar>

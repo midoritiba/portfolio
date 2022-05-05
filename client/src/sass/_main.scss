@@ -1,4 +1,5 @@
 $medium: 820px;
+$screen2: 1200px;
 $large: 1500px;
 
 * {
@@ -95,6 +96,7 @@ body {
           @media screen and (max-width: $large){
             width: 100%;
           }
+          
           .technologies{
             .technologie-wrapper{
               font-size: 14px;
@@ -138,14 +140,22 @@ body {
         padding: 10px;
         justify-content: center;
         align-content: center;
+        border-radius: 20px;
+        @media screen and (max-width: $medium){
+          flex-direction: column;
+        }
         .intro{
           width: 80%;
           letter-spacing: 1px;
           padding: 10px;
           border-radius: 5px;
+          @media screen and (max-width: $medium){
+            width: 100%;
+          }
         }
         .cv{
           text-align: center;
+          align-self: center;
           width: 20%;
           a{
             color: black;
@@ -158,13 +168,36 @@ body {
       .details{
         display: flex;
         width: 100%;
+        @media screen and (max-width: $screen2){
+          flex-direction: column;
+        }
+        .details-education{
+          width: 100%;
+          @media screen and (max-width: $large){
+            width: 70%;
+          }
+          @media screen and (max-width: $screen2){
+            width: 100%;
+            text-align: center;
+          }
+        }
         .details-technologies{
-          width: 50%;
+          margin-left: 1rem;
+          @media screen and (max-width: $large){
+            width: 30%;
+            margin-left: 0;
+          }
+          @media screen and (max-width: $screen2){
+            margin-top: 3rem;
+            width: 100%;
+            text-align: center;
+          }
           .technologies{
             .technologie-wrapper{
+              margin: 1rem 2rem 1rem 0;
+              font-size: 20px;
+              padding: 1rem;
               display: inline-block;
-              font-size: 16px;
-              padding: 8px;
               border-radius: 10px;
               font-weight: bold;
               background-color: #37B3A8;
@@ -172,11 +205,15 @@ body {
               box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
               -webkit-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
               -moz-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+              
+              @media screen and (max-width: $large){
+              margin: 0.5rem 1rem 1rem 1rem;
+              font-size: 16px;
+              padding: 0.8rem;
+              text-align: center;
+             }
             }
           }
-        }
-        .details-education{
-          width: 50%;
         }
       }
       
@@ -194,20 +231,40 @@ body {
         min-height: 60vh;
         display: flex;
         justify-content: center;
+        align-items: center;
+        align-content: center;
+        @media screen and (max-width: $large) {
+          flex-direction: column;
+        }
         .extra-info-img{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           text-align: center;
           width: 100%;
           align-items: center;
+
+          .about-me-img{
+            width: 80%;
+            object-fit: contain;
+            @media screen and (max-width: $large) {
+              width: 50%;
+            }
+          }
         }
         .extra-info-wrapper {
           .more-about{
+            margin-left: 1rem;
             background-color: #ff5cec96;
             padding: 20px;
-            height: 100%;
             padding: 1rem;
-            height: 100%;
-            overflow: auto;
+            height: 80%;
             letter-spacing: 2px;
+            border-radius: 10px;
+            @media screen and (max-width: $large) {
+              margin-left: 0;
+              margin-top: 2rem;
+            }
           }
         }
       }
