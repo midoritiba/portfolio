@@ -29,7 +29,7 @@ const Homepage = () => {
               <a rel='noopener noreferrer' target='_blank' href='mailto:mic.tiba@gmail.com' className='link'>
                 <FaEnvelope size={iconSize} color={iconColor} className={iconClasses}/>
               </a>
-          </div>
+            </div>
           
           <h4 className="mt-4 text-center">
             I'm a lifelong learner, interested in beautiful designs and clean coding

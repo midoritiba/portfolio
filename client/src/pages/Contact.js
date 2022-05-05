@@ -1,14 +1,11 @@
 import { useContext } from "react";
 import { DarkModeContext } from "../context/DarkModeContext";
 import ContactForm from '../components/ContactForm';
-// import {HashLink as Link} from 'react-router-hash-link'
-import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
+
 
 const Contact = () => {
   const {darkMode} = useContext(DarkModeContext)
-  let iconSize = "40"
-  let iconColor = "#37B3A8"
-  let iconClasses = 'mt-2 me-3 cursor-pointer'
+
   return (
     
     <section className={darkMode ? `contact bg-dark` : `contact bg-light`} id='contact'>
