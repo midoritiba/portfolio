@@ -270,8 +270,24 @@ body {
       }
     }
     #contact{
+      h1{
+        font-family: 'Merriweather', serif;
+      }
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 15%;
+      .contact-wrapper{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: $large) {
+          flex-direction: column-reverse;
+        }
+      }
+
     }
   }
 

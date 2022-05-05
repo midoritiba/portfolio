@@ -9,16 +9,18 @@ const Contact = () => {
   return (
     
     <section className={darkMode ? `contact bg-dark` : `contact bg-light`} id='contact'>
-      
+      <h1 className='mb-3'>Get in touch</h1>
+      <h5 className="mt-1 mb-5">Don't hesitate contacting me 🤗</h5>
+      <div className="contact-wrapper">
         <div className="d-flex flex-column" style={{}}>
-          <h1 className='mb-3'>Get in touch</h1>
-
           <ContactForm />    
-          </div>     
+        </div>     
           
-          <div className='d-flex flex-column text-center ms-5'>
-            <img className='mt-5 ms-5' src={process.env.PUBLIC_URL + '/images/contact.png'} style={{width: '300px', borderRadius: '50%'}} alt="" /> 
-          </div>        
+        <div className='d-flex flex-column text-center '>
+          <img  src={process.env.PUBLIC_URL + '/images/contact.png'} style={{width: '300px', borderRadius: '50%'}} alt="" /> 
+        </div>   
+      </div>
+     
 
       
     </section>

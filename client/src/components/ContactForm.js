@@ -34,7 +34,6 @@ const ContactForm = () => {
 
   return (
       <div className='me-5'>
-        <h5 className="mt-1 mb-3">Don't hesitate contacting me 🤗</h5>
         <div className="section-content">
           <div className="form-wrapper">
             <form onSubmit={handleSubmit}  ref={form}>
