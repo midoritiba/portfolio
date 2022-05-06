@@ -3,6 +3,10 @@
 <br>
 https://michelle-tiba.herokuapp.com/
 
-For this project I created some reusable components such as:
-- Card
-- Accordion
+Full Stack developer portolio.
+
+### Reusable components - useState and props:
+- Card for Projects
+- Accordion 
+
+### Dark mode option with useContext
