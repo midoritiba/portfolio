@@ -25,7 +25,7 @@ Responsive design generated with React.js and deployed through Heroku.
 
 ![homelight](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/home-light.png)
 
-![homedark](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/home-dark.png)
+![homedark](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/about.png)
 
 ![projects](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/projects.png)
 
