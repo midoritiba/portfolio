@@ -1,6 +1,6 @@
 const Card = ({id, title, technologies, description, features, demo, code, image}) => {
   return (
-    <div className="card mt-5" id={id}>
+    <div className="card" id={id}>
 
     <div className="details">
       <h2>{title}</h2>
@@ -22,13 +22,13 @@ const Card = ({id, title, technologies, description, features, demo, code, image
       </div>
 
       <div className="project-buttons mt-2">
-        <a rel='noopener noreferrer' target='_blank' className='link text-decoration-none' href={demo}>
+        <a rel='noopener noreferrer' target='_blank' href={demo}>
           <div className="btn fill">
            demo
           </div>
         </a>
 
-        <a rel='noopener noreferrer' target='_blank' className='link text-decoration-none' href={code}>
+        <a rel='noopener noreferrer' target='_blank' href={code}>
             <div className="btn fill ms-3">
             code
             </div>

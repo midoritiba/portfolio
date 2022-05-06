@@ -24,12 +24,12 @@ const Homepage = () => {
           
           <div>
             {/* INTRODUCTION */}
-            <h1 className="my-3 text-center" >
+            <h1 className="my-3" >
               Hi, I am Michelle | Full Stack Developer
             </h1>
 
             {/* SOCIAL MEDIA ICONS */}
-            <div className='text-center mb-5'>
+            <div className='mb-5'>
               <a rel='noopener noreferrer' target='_blank' href='https://github.com/midoritiba'>
                 <FaGithub size={iconSize} color={iconColor} className={iconClasses}/>
               </a>
@@ -41,10 +41,10 @@ const Homepage = () => {
               </a>
             </div>
           
-            <h4 className="mt-0 mt-md-4 text-center">
+            <h4 className="mt-0 mt-md-4">
               I'm a lifelong learner, interested in beautiful designs and clean coding
             </h4>
-            <p className="text-center">
+            <p>
               When I am not coding I'm most probably dancing Zumba 💃 or shower singing 🎤🚿
             </p>
 
@@ -55,7 +55,7 @@ const Homepage = () => {
           </div>
 
           {/* MAIN-IMAGE */}
-          <div className='img ms-5 align-self-center'>
+          <div className='img ms-5'>
              <img src={process.env.PUBLIC_URL + '/images/profile.png'} alt="" />
           </div>
 

@@ -13,8 +13,14 @@ const About = () => {
   const handleChange = () => {
     setChecked(!checked);
   };
+
   return (
-    <section className={darkMode ? `about bg-dark` : `about bg-light`} id='about'>
+    <section 
+      className={darkMode ? 
+                `about bg-dark` : 
+                `about bg-light`} 
+      id='about'
+    >
 
       <h1 className='mt-5 mb-3 title'>About me</h1>
 
@@ -25,7 +31,7 @@ const About = () => {
           I'm able to work independently & collaboratively in a team with attention to details.<br/>
         </h5>
         <div className="cv">
-          <a className='link'  rel='noopener noreferrer' target='_blank' href='https://drive.google.com/file/d/1k3TqpKPSg4Ven1Vr7gLdkyzcWFyKmZ7T/view?usp=sharing'>
+          <a rel='noopener noreferrer' target='_blank' href='https://drive.google.com/file/d/1k3TqpKPSg4Ven1Vr7gLdkyzcWFyKmZ7T/view?usp=sharing'>
             <FaFileDownload className="mt-3" size={42} color={darkMode ? 'white' : 'black'}/><p>Full CV</p>
           </a>
         </div>
