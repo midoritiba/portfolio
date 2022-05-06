@@ -31,7 +31,7 @@ const About = () => {
           I'm able to work independently & collaboratively in a team with attention to details.<br/>
         </h5>
         <div className="cv">
-          <a rel='noopener noreferrer' target='_blank' href='https://drive.google.com/file/d/1k3TqpKPSg4Ven1Vr7gLdkyzcWFyKmZ7T/view?usp=sharing'>
+          <a rel='noopener noreferrer' target='_blank' href='https://drive.google.com/file/d/1QJcGQ-kqV1xmnY6AJgZM2rBVYSERXfgR/view?usp=sharing'>
             <FaFileDownload className="mt-3" size={42} color={darkMode ? 'white' : 'black'}/><p>Full CV</p>
           </a>
         </div>
