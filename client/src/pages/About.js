@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section className={darkMode ? `about bg-dark` : `about bg-light`} id='about'>
 
-      <h1 className='mt-5 mb-4'>About me</h1>
+      <h1 className='mt-5 mb-3 title'>About me</h1>
 
       <div className="introduction mb-5">
         <h5 className="intro">

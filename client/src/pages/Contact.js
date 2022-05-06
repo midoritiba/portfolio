@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     
     <section className={darkMode ? `contact bg-dark` : `contact bg-light`} id='contact'>
-      <h1 className='mb-3'>Get in touch</h1>
+      <h1 className='mt-5 mb-3 title'>Get in touch</h1>
       <h5 className="mt-1 mb-5">Don't hesitate contacting me 🤗</h5>
       <div className="contact-wrapper">
           <ContactForm />            
