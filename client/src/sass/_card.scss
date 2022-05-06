@@ -1,0 +1,46 @@
+div.card{
+    padding: 2rem;
+    background-color: #dddada9f;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: none;
+    margin-top: 3rem;
+
+    @media screen and (max-width: $screen3){
+        flex-direction: column;
+    }
+
+    .details{
+        width: 60%;
+        @media screen and (max-width: $screen3){
+        width: 100%;
+        }
+          
+        .technologies{
+            .technologie-wrapper{
+              font-size: 14px;
+              display: inline-block;
+              padding: 6px;
+              border-radius: 10px;
+              background-color: white;
+                box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+            }
+          }
+    }
+    .project-mockup{
+        align-self: center;
+        width: 40%;
+        transition: all .2s ease-in-out;
+        &:hover{
+        transform: scale(1.1);
+        }
+        @media screen and (max-width: $screen3){
+        width: 100%;
+        margin-top: 1rem;
+        }
+    }
+}
