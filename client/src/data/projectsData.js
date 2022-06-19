@@ -3,7 +3,7 @@ export const projectsData = [
       id: 1,
       title: 'Coffee Shop | Change and Tip Calculator',
       technologies: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'Netlify'],
-      description: ' A responsive web application for employees to use it as a bill calculator. The cashier can view all items of the menu (image, category, name and price), add items to cart, increase, decrease or remove units of each item added. The app will show the total items in the cart, the subtotal price, the value of a 10% tip, the total price, and corresponding change if necessary. After registering the purchase, we can move on to the next customer. <br/>For this project, the following concepts were applied:',
+      description: ' A responsive web application for employees to use it as a bill calculator. The cashier can view all items of the menu (image, category, name and price), add items to cart, increase, decrease or remove units of each item added. The app will show the total items in the cart, the subtotal price, the value of a 10% tip, the total price, and corresponding change if necessary. After registering the purchase, we can move on to the next customer. For this project, the following concepts were applied:',
       features: ['Classes Constructors', 'DOM Manipulation', 'Array.forEach()', 'onClick Event'],
       demo: 'https://change-tip-calculator.netlify.app/',
       code: 'https://github.com/midoritiba/CoffeShop-Cash-register-Project',
@@ -38,6 +38,16 @@ export const projectsData = [
         demo: 'https://omdb-search-movies.netlify.app/',
         code: 'https://github.com/midoritiba/API_MovieLibrary',
         image: '/images/project4.svg',
+    },
+    {
+        id: 5,
+        title: 'Weather App',
+        technologies: ['Javascript', 'CSS'],
+        description: 'For this project we get access to a sampling of AccuWeather API endpoints - City and Current Conditions for this App.',
+        features: ['API using fetch', 'Async & Await', 'DOM Manipulation', 'onSubmit Event'],
+        demo: 'http://michelletiba.me/weather-app/',
+        code: 'https://github.com/midoritiba/weather-app',
+        image: '/images/project5.svg',
     }
 
   ];
