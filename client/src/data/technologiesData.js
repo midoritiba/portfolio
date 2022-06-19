@@ -6,6 +6,7 @@ export const technologiesData = [
     'Javascript',
     'Node.js',
     'React.js',
+    'Next.js',
     'Express.js',
     'MongoDB',
     'Heroku',
