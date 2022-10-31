@@ -6,7 +6,7 @@ export const technologiesData = [
     'Javascript',
     'Node.js',
     'React.js',
-    'Typescript'
+    'Typescript',
     'Next.js',
     'Express.js',
     'MongoDB',
