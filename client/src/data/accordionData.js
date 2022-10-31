@@ -1,7 +1,7 @@
 export const accordionData = [  
   {
     title: 'what I am currently learning',
-    content: `At this moment I am focusing on Next.js 👩‍🎓`
+    content: `At this moment I am focusing on Typescript 👩‍🎓`
   },
   {
     title: '5 years in social projects',
