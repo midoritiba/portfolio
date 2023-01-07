@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-wrapper">
           <div className="copyright pt-2">
             <h5>Michelle Tiba</h5>
-            <p style={{fontSize: '12px'}}>&copy; 2022, Build and designed by Michelle Tiba</p>
+            <p style={{fontSize: '12px'}}>&copy; 2023, Build and designed by Michelle Tiba</p>
           </div>
 
           <div className="footer-contact">
