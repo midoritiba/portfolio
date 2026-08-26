@@ -1,34 +1,64 @@
-# Michelle Tiba's Porfolio
-![Heroku](https://heroku-badge.herokuapp.com/?app=michelle-tiba)
-<br>
-https://michelle-tiba.herokuapp.com/
+# Michelle Tiba — Portfolio
 
-Full Stack developer portolio.
-Responsive design generated with React.js and deployed through Heroku.
+An early personal portfolio project built with React to showcase projects, skills, and contact information.
 
-### Reusable components - useState and props:
-- Card for Projects
-- Accordion 
+> This project was originally created in 2022 and is kept as part of my development journey. It has since received small maintenance updates to keep it running with current tooling.
 
-### Dark mode option with useContext
+## Features
 
-## Folder overview
+- Responsive layout
+- Light and dark themes using React Context
+- Reusable project and navigation components
+- Mobile navigation
+- Contact form integration with EmailJS
+- SCSS styling
 
-- `src/components/*` - All react components.
-- `src/context/*` - All react context providers.
-- `src/data/*` - Various static data sources.
-- `src/sass/*` - Contains styles used.
-- `src/pages/*` - All static pages built of react components and static content.
-- `public/` - Contains public content for site.
-- `public/images/*` - Contains all images used.
+## Tech Stack
 
+- React
+- JavaScript
+- React Router
+- Context API
+- SCSS
+- EmailJS
+- Express
 
-![homelight](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/home-light.png)
+## Running locally
 
+Install the server dependencies:
 
-![homedark](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/about.png)
+```bash
+npm install
+```
 
+Install the client dependencies:
 
-![projects](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/projects.png)
+```bash
+npm install --prefix client
+```
 
+Start the application:
 
+```bash
+npm run dev
+```
+
+## Screenshots
+
+### Home
+
+![Home](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/home-light.png)
+
+### Dark mode
+
+![Dark mode](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/about.png)
+
+### Projects
+
+![Projects](https://raw.githubusercontent.com/midoritiba/portfolio/main/mockup/projects.png)
+
+## About this project
+
+This repository represents an earlier stage of my frontend development work and is preserved rather than rebuilt to reflect the technologies and patterns I was using at the time.
+
+My current professional work and experience can be found on my personal website and LinkedIn.
